@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html lang="sr">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Portfolio </title>
+		<link rel="icon" type="image/x-icon" href="slike/tablogo.png">
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/23e874723f.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<!-- -------nav bar----------->
+		<div id="header">
+			<div class="cont">
+				<nav>
+					<img src="slike/logo.png" alt="IWDesign" title="Logo" class="logo">
+					<ul id="sidemenu">
+						<li><a href="#">Početna</a></li>
+						<li><a href="#omeni">O meni</a></li>
+						<li><a href="#servisi">Servisi</a></li>
+						<li><a href="#rad">Portfolio</a></li>
+						<li><a href="#contact">Kontakt</a></li>
+						<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+					</ul>
+					<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+				</nav>
+				<div class="htext">
+					<h1><span>Janko</span> Pop-Mitić</h1>
+					<p>Grafički / <span>Web</span> Dizajner</p>
+				</div>
+			</div>
+		</div>
+		<!-- -------O MENI--------- -->
+		<div id="omeni">
+			<div class="cont">
+				<div class="row">
+					<div class="about-col1">
+						<img src="slike/profil.jpg" alt="profil" title="profil">
+					</div>
+					<div class="about-col2">
+						<h1 class="sub"><span>BIO</span>GRAFIJA</h1>
+						<hr class="h"/>
+						<p>Rođen sam u Užicu, 15.09.1995. godine, gde sam završio<br>
+							osnovno i srednje obrazovanje. 2019. godine sam upisao<br>
+							Visku školu strukovnih studija  <a href="https://www.politehnika.edu.rs/" target="_blank">“Beogradska Politehnika”</a>.<br> 
+							Trenutno sam apsolvent treće godine na smeru Grafički dizajn.
+						</p>
+						
+						<div class="t-titles">
+							<p class="tab-links active-link" onclick="opentab('Vestine')">Programi</p>
+							<p class="tab-links" onclick="opentab('Iskustvo')">Iskustvo</p>
+							<p class="tab-links" onclick="opentab('Obrazovanje')">Obrazovanje</p>
+						</div>
+						<div class="tab-contents active-tab" id="Vestine">
+							<ul>
+								<li><span>Ilustracije</span><br>Illustrator</li>
+								<li><span>Foto-editovanje</span><br>Photoshop / Lightroom</li>
+								<li><span>Publikacije</span><br>In Design</li>
+							</ul>
+						</div>
+						<div class="tab-contents" id="Iskustvo">
+							<ul>
+								<li><span>Evropska unija</span><br>Dizajner promotivnih materijala od 2018. godine</li>
+								<li><span>Olof Palme fondacija / Sweden</span><br>Dizajner promotivnih materijala od 2019. godine</li>
+								<li><span>Užički centar za ljudska prava i demokratiju</span><br>Grafički dizajner od 2016. godine</li>
+							</ul>
+						</div>
+						<div class="tab-contents" id="Obrazovanje">
+							<ul>
+								<li><span>Jezici</span><br>srpski, engleski, francuski</li>
+								<li><span>Uzička gimnazija</span><br>Društveno - jezički smer</li>
+								<li><span>Beogradska politehnika</span><br>Grafički dizajn</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ----------servisi------------ -->	
+		<div id="servisi">
+			<div class="cont">
+				<h1 class="sub">SERVISI</h1>
+				<hr class="hx"/>
+				<div class="mojservis">
+					<div>
+						<i class="fa-brands fa-creative-commons"></i>
+						<h2>Ilustracije</h2>
+						<a href="https://sr.m.wikipedia.org/sr-ec/%D0%98%D0%BB%D1%83%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%98%D0%B0" target="_blank">Saznaj više</a>
+					</div>
+					<div>
+						<i class="fa-solid fa-mobile-screen"></i>
+						<h2>Publikacije</h2>
+						<a href="https://sh.wikipedia.org/wiki/Publikacija" target="_blank">Saznaj više</a>
+					</div>
+					<div>
+						<i class="fa-solid fa-rectangle-ad"></i>
+						<h2>Reklamni materijali</h2>
+						<a href="https://en.wikipedia.org/wiki/Promotional_merchandise" target="_blank">Saznaj više</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ----------radovi------------ -->
+		<div id="rad">
+			<div class="cont">
+				<h1 class="sub">PORTFOLIO</h1>
+				<hr class="hx"/>
+				<div class="work-list">
+					<div class="work">
+						<img src="slike/kalendar1.jpg" alt="kalendar" title="kalendar">
+						<div class="layer">
+							<h3>Kalendar</h3>
+							<p>"Defence of the Ancients 2" tematski kalendar za 2022. godinu</p>
+							<a href="slike/kalendar.pdf" target="_blank"><i class="fa-solid fa-link"></i></a>
+						</div>
+					</div>
+					<div class="work">
+						<img src="slike/oglas1.jpg" alt="poster" title="poster">
+						<div class="layer">
+							<h3>Muzicki oglas</h3>
+							<p>Muzicki oglas za "Animals" album od grupe Pink Floyd</p>
+							<a href="slike/disk.pdf" target="_blank"><i class="fa-solid fa-link"></i></a>
+						</div>
+					</div>
+					<div class="work">
+						<img src="slike/casopis.jpg" alt="casopis" title="casopis">
+						<div class="layer">
+							<h3>Naslovna strana casopisa</h3>
+							<p>Naslovna strana za FIBONACCI casopis "Covek i rec"</p>
+							<a href="slike/casopis.jpg" target="_blank"><i class="fa-solid fa-link"></i></a>
+						</div>
+					</div>
+				</div>
+				<a href="galerija.html" class="btn" onclick="Klik()">Pogledaj više</a>
+			</div>
+		</div>
+		
+		<!-- -----------Kontakt------------ -->
+		<div id="contact">
+			<div class="cont">
+				<div class="row">
+					<div class="contact-left">
+						<h1 class="sub">Kontakt</h1>
+						<p><i class="fa-solid fa-paper-plane"></i>jpop-mitic@gmail.com</p>
+						<p><i class="fa-solid fa-phone"></i>+38160/611-74-79</p>
+						<div class="social-icons">
+							<a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+							<a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+							<a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+						</div>
+						<a href="slike/projekat.pdf" download class="btn btn2" target="_blank">Aktivni projekat</a>
+					</div>
+					<div class="contact-right">
+						<form>
+							<input type="text" name="Name" placeholder="Vaše ime" required>
+							<input type="email" name="email" placeholder="Vaš email" required>
+							<textarea name="message" rows="6" placeholder="Vaša poruka"></textarea>
+							<button type="submit" class="btn btn2">Pošalji</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<a href="#header" class="btn">Početna</a>
+			<div class="cr">
+				<p>Copyright&copy;IWDesign. Janko Pop-Mitić 2019/0320</p>
+			</div>
+		</div>
+		
+		<!-- ------------JavaScript------- -->
+		<script>
+		
+			var tablinks = document.getElementsByClassName("tab-links");
+			var tabcontents = document.getElementsByClassName("tab-contents");
+			
+			function opentab(tabname){
+				for(tablink of tablinks){
+					tablink.classList.remove("active-link");
+				}
+				for(tabcontent of tabcontents){
+					tabcontent.classList.remove("active-tab");
+				}
+				event.currentTarget.classList.add("active-link");
+				document.getElementById(tabname).classList.add("active-tab");
+			}
+			
+		</script>
+		
+		<script>
+			
+			var sidemenu = document.getElementById("sidemenu");
+			
+			
+			function openmenu(){
+				sidemenu.style.right = "0";
+			}
+			function closemenu(){
+				sidemenu.style.right = "-200px";
+			}
+			
+		</script>
+		
+			<script>
+			function Klik() {
+				alert("Prelaz na Galeriju");
+			}
+		</script>
+		
+	</body>
+</html>
